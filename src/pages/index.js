@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
+
+import Post from '../components/Post';
+
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
@@ -16,38 +18,33 @@ export default function Home() {
 
         <ul className={styles.posts}>
           <li>
-            <p className={styles.postsContent}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+            <Post
+              content=" Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            <p className={styles.postsDate}>24/03/2022</p>
+              type and scrambled it to make a type specimen book."
+              date='24/03/2022'
+            />
           </li>
           <li>
-            <p className={styles.postsContent}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+            <Post
+              content=" Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            <p className={styles.postsDate}>24/03/2022</p>
+              type and scrambled it to make a type specimen book."
+              date='24/03/2022'
+            />
           </li>
           <li>
-            <p className={styles.postsContent}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+            <Post
+              content=" Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            <p className={styles.postsDate}>24/03/2022</p>
+              type and scrambled it to make a type specimen book."
+              date='24/03/2022'
+            />
           </li>
         </ul>
-
-        <form>
-          <textarea className={styles.formContent}></textarea>
-          <button className={styles.formButton}>Add New Post</button>
-        </form>
       </main>
     </div>
   );
