@@ -1,13 +1,17 @@
-$primary-color: #0070f3;
+$primary-color: blueviolet;
 
 .container {
-  padding: 0 2rem;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
   max-width: 800px;
-  min-height: 100vh;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .title {
@@ -24,6 +28,7 @@ $primary-color: #0070f3;
 
   & > li {
     margin-bottom: 3em;
+
     &:last-child {
       margin-bottom: 0;
     }

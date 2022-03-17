@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import Post from '../components/Post';
+import Bio from '../components/Bio';
 
 import styles from '../styles/Home.module.scss';
 
@@ -14,7 +15,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Daydreamer</h1>
+        <Bio
+          headshot='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'
+          name='Farzam Mo'
+          tagline='Learing NextJs & Figma'
+          role='Junior Software Engineer'
+        />
 
         <ul className={styles.posts}>
           <li>
